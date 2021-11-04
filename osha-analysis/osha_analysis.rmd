@@ -1,0 +1,213 @@
+---
+title: "osha_analysis"
+author: "Tori Bergel, Aadit Tambe, Breece Parsons, Victoria Ebner"
+date: "9/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction 
+In this notebook, we are reverse engineering the story, Fewer Inspectors, More Deaths: The Trump Administration Rolls Back Workplace Safety Inspections, from the Center for Public Integrity [FEWER INSPECTORS, MORE DEATHS: THE TRUMP ADMINISTRATION ROLLS BACK WORKPLACE SAFETY INSPECTIONS](https://publicintegrity.org/politics/system-failure/deaths-cutbacks-workplace-safety-inspections-osha/)
+
+## Load libraries
+```{r echo=FALSE, message=FALSE}
+# For general data analysis
+library(tidyverse)
+# For working with dates 
+library(lubridate)
+# For working with strings
+library(stringr)
+```
+
+## Load and Cleaning Data
+
+The data is from OSHA, it contains details of inspections conducted by the agency in the U.S. The data was obtained from its website. The dataset has 36 number of records, for 2,464,796 inspections.
+
+Each row in the dataset represents a single inspection of a single facility on a given data.
+
+Here's a shortened data dictionary that explains what each row that we've used in our project represents:
+* estab_name | character | institution or facility where the investigation was conducted
+* site_city | character | city where investigation was conducted
+* insp_type | character | type of inspection: "M" refers to fatalities/ catastrophes — which is what this story focuses on
+* safety_hlth | character | whether it was a safety inspection or health inspection — this story focuses on safety inspectioins
+* insp_scope | character | a "D" in this column means there was no investigation conducted or "no inspection"
+* open_date | date | indicates when the inspection was started (yyyymmdd)
+* close_case_date | date | close date of inspection (yyyymmdd)
+
+```{r}
+#create an object, called osha_analysis_data
+osha_analysis_data <- read_csv("../data/osha_inspections.csv")
+glimpse(osha_analysis_data)
+# There is no cleaning that needs to be done.
+
+```
+
+## Sentences to Engineer
+In this notebook, we are reverse engineering four (4) sentences from the story. We are guided by data analysis conducted by the [Center for Public Integrity](https://github.com/PublicI/osha-fatality-inspections)
+
+### Sentence 1
+
+"Knowles’ accident was one of 3,203 that led to a death or “catastrophe” — defined by the U.S. Department of Labor as hospitalizations of three or more workers — and triggered an investigation by safety inspectors at the U.S. Occupational Safety and Health Administration during the first three and a half years of Donald Trump’s presidency, according to the agency’s enforcement data."
+
+```{r}
+
+#The first step is to check whether there were 3203 accidents that took place during the first three and a half years of Trump's presidency. The next step is to see if Knowles' company was listed in the 3203 accidents.
+
+#According to the Center for Public Integrity's repo, the "M" in insp_type refers to fatalities/ catastrophes 
+#And "S" in safety_hlth column refers to Safety inspections
+
+# The numbers may be different because OSHA updated their dataset since the time this story was published.
+
+#PART 1: Total accidents
+#First, count the total numbers of safety inspections ("S"), and catastrophes ("M")
+
+catastrophe_inspections <- osha_analysis_data %>%
+  filter(safety_hlth == "S", insp_type == "M") %>%
+  summarise(catastrophe_inspections = n())
+
+catastrophe_inspections
+
+#PART 2: Trump's presidency
+#Then, filter this to see how many took place in Trump's term in office -- first 3.5 years
+#According to Center for Public Integrity's repo: Trump took office on 2017-01-20, and the 3.5-year period ended on 2020-07-20.
+trump_inspections <- osha_analysis_data %>%
+  filter(safety_hlth == "S", insp_type == "M") %>%
+  filter(open_date >= "2017-01-20",
+         open_date < "2020-07-20") %>%
+  summarise(trump_inspections = n())
+
+trump_inspections
+
+#ANSWER: 3206
+
+#PART 3: KNOWLES' workplace
+knowles_workplace <- osha_analysis_data %>%
+  filter(safety_hlth == "S", insp_type == "M") %>%
+  filter(open_date >= "2017-01-20",
+         open_date < "2020-07-20") %>%
+  #filter(estab_name == "MAGESTIC MARBLE")
+  #filter, using str_detect, to look for a line in column "estab_name"
+  #regex ignores case senstive characters, library stringr installed
+  filter(str_detect(estab_name, regex("majestic marble", ignore_case = TRUE)))
+
+knowles_workplace
+```
+
+### Sentence 2 
+
+In 2019, OSHA’s safety inspectors conducted 962 investigations into fatal or catastrophic workplace incidents — the highest number since the agency began publishing the data in 2011.
+
+```{r}
+# First, create an object called year_fatal_cat_insp.
+year_fatal_cat_insp <- osha_analysis_data %>%
+  #According to the Center for Public Integrity's repo, the "M" in insp_type refers to fatalities/ catastrophes 
+  #And "S" in safety_hlth column refers to Safety inspections
+  filter(insp_type == "M", safety_hlth == "S") %>%
+  #create a new column, year
+  mutate(year = year(open_date)) %>%
+  #group by that culumn
+  group_by(year) %>%
+  select(year, insp_type) %>%
+  #count number of insp_type was "M"
+  count(insp_type = "M")%>%
+  #filter by 2019
+  filter(year == "2019")
+year_fatal_cat_insp
+#ANSWER: 962
+  
+```
+
+### Sentence 3
+
+"The agency has conducted slightly fewer safety inspections during the first three years of Trump’s presidency than during a comparable period at the end of President Barack Obama’s second term, even though the labor force grew by 16 percent, according to a Center for Public Integrity analysis of the agency’s inspection data."
+
+```{r}
+#Then, filter this to see how many took place in Trump's term in office -- first 3.5 years
+#According to ProPublica's repo: Trump took office on 2017-01-20, and the 3.5-year period ended on 2020-07-20.
+
+trump_begin_date <- "2017-01-20"
+trump_end_date <- "2020-01-20"
+
+#According to the Center for Public Integrity's repo, the "M" in insp_type refers to fatalities/ catastrophes 
+#And "S" in safety_hlth column refers to Safety inspections
+
+# Part 1: Inspections conducted during Trump's presidency
+# create an object, trump_inspections
+trump_inspections <- osha_analysis_data %>%
+  filter(safety_hlth == "S") %>%
+  #filter to see inspections conducted during Trump's presidency.
+  filter(open_date >= trump_begin_date,
+        open_date < trump_end_date,
+        insp_scope != "D") # this means that were no inspection conducted
+count(trump_inspections)
+  
+#Q: How many safety inspections were conducted in the first three years of Trump's presidency?
+#A:88354
+
+# Part 2: Inspections conducted during Obama's presidency
+obama_begin_date <- "2014-01-20"
+obama_end_date <- "2017-01-20"
+# create an object, obama_inspections
+obama_inspections <- osha_analysis_data %>%
+  filter(safety_hlth == "S") %>%
+   filter(open_date >= obama_begin_date,
+          open_date < obama_end_date,
+          insp_scope != "D") # no non-inspections
+count(obama_inspections)
+#Q: How many safety inspections were conducted in the last three years of Obama's second term?
+#A:93992
+
+#Part 2: Compare the two
+
+#x = obama - trump
+x <- (count(obama_inspections)) - (count(trump_inspections))
+
+(count(trump_inspections) - count(obama_inspections)
+) / count(obama_inspections) * 100
+#Q: What's the difference in inspections between Trump and Obama?
+#A:5638. OSHA conducted 5638 more safety inspections during the last three years of Obama's second term than in the first three years of Trump's presidency. A slightly larger amount.
+```
+
+### Sentence 4
+
+Amid the COVID-19 pandemic, OSHA has been cutting back even more, conducting only 5,127 inspections since March 13, when Trump declared the coronavirus a national emergency. That’s a drop of about two-thirds compared to the same period last year.
+
+```{r}
+#First, we're going to create a new object and call it osha_covidinspections
+covid_begin <- "2020-03-13" #Trump declared COVID-19 national emergency on this date
+covid_end <- "2020-08-18" #CPI published its article on this date
+
+covid_inspections<-osha_analysis_data%>%
+  #"M" in insp_type, according to CPI is fatalities/ catastrophes
+  #"S" in safety_hlth is 'Safety inspections'
+ 
+  filter(safety_hlth == "S") %>% #first we do "S"
+ 
+   filter(open_date >= covid_begin) %>%
+   filter(open_date < covid_end) %>%
+   filter(insp_scope !="D") #now we do "D"
+
+count(covid_inspections)
+#ANSWER: 4457 is the number of covid_inspections during that time period
+
+#now, we can use the same dates, just for last year in 2019.
+compare_begin <-"2019-03-13"
+compare_end<-"2019-08-18"
+
+#new object called compare_oshainspections
+
+compare_oshainspections <-osha_analysis_data%>%
+    filter(safety_hlth == "S") %>%
+   filter(open_date >= compare_begin) %>% #same as before but now we put compare_begin
+   filter(open_date < compare_end) %>% #same as before but now it's compare_end
+   filter(insp_scope != "D")
+
+count(compare_oshainspections) #now, we see how many inspections there were last year.
+#ANSWER: There were 13400 last year. Compared to 4457, that is about a drop of 2/3.
+
+
+```
+

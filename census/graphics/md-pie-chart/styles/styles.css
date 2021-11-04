@@ -1,0 +1,132 @@
+#container {
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-right:30px;
+    padding-bottom:10px;
+    border-left:1px solid black;
+    border-bottom:14pt solid black;
+    border-top:1px solid black;
+    border-right:1px solid black;
+    box-shadow:5px 5px 10px gainsboro;
+    min-width: 300px;
+    max-width: 600px;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1 {
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size:24px;
+fill:#2c2c2c;
+margin-bottom: -2px;
+margin-top: 10px;
+line-height: 1.2;
+}
+
+h2 {
+    font-family: 'Source Serif Pro', serif;
+
+fill:grey;
+font-weight:400;
+font-size:18px;
+line-height: 1.2;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+h3 {
+font-family:'Poppins', sans-serif;
+fill:grey;
+font-weight:300;
+font-size:12px;
+text-transform: uppercase;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+h4 {
+font-family:'Poppins', sans-serif;
+fill:grey;
+font-weight:300;
+font-size:12px;
+margin-top: 0px;
+margin-bottom: 10px;
+margin-top: 10px;
+
+}
+
+.buttons{
+    color: #e9e8ea;
+}
+
+div.tooltip {	
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    position: absolute;			
+    text-align: center;								
+    padding: .2rem;				
+    background: #666666;
+    color: #e9e8ea;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;
+    font-size: .7rem;			
+}
+
+
+
+.legend-pie{
+    font-size: 12px;
+    font-family:'Poppins', sans-serif;
+    padding-left: 0px;
+    line-height: 1;
+    text-align: center;
+}
+
+.legend-pie .white{
+    color:#de5826;
+}
+.legend-pie .black{
+    color:#faa916;
+}
+.legend-pie .hispanic{
+    color:#2ec4b6;
+}
+.legend-pie .asian{
+    color:#8fd694;
+}
+.legend-pie .two{
+    color:#80217f;
+}
+.legend-pie .other{
+    color:#1979b9;
+}
+.legend-pie .native{
+    color:#990000;
+}
+.legend-pie .pacific{
+    color:#fbd603;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .legend-bar text{
+        font-size: .5rem;
+    }
+    .legend-bar rect{
+        width: 5px;
+        height: 5px;
+    }
+    div.tooltip {	
+        font-size: 1rem;			
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+h1{
+    font-size: 18px;
+}
+}

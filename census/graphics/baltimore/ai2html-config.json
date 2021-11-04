@@ -1,0 +1,34 @@
+{
+    "fonts": [
+        {
+            "aifont": "Poppins-Bold",
+            "family": "Poppins",
+            "weight": "600",
+            "style": ""
+        },
+        {
+            "aifont": "SourceSerifRoman-Semibold",
+            "family": "Source Serif Pro",
+            "weight": "600",
+            "style": ""
+        },
+        {
+            "aifont": "SourceSerifRoman-Regular",
+            "family": "Source Serif Pro",
+            "weight": "400",
+            "style": ""
+        },
+        {
+            "aifont": "Poppins-Regular",
+            "family": "Poppins",
+            "weight": "400",
+            "style": ""
+        },
+        {
+            "aifont": "Poppins-Medium",
+            "family": "Poppins",
+            "weight": "400",
+            "style": ""
+        }
+    ]
+}
