@@ -9,28 +9,25 @@ These code samples show my growth as a computational and data journalist since t
 My work demonstrates my commitment to figuring out programming concepts I may not know.
 
 All of the code in this repository was either written by or contributed to by me. Here's an overview of what's in this repository.
-- [News products](#products)
-  - [News app: Mapping every journalist killed in South Asia since 1992](#news-app)
-  - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#bot)
-- [Data analysis](#data)
-  - [Analysis of campus police logs of universities in the DC metro area](#police)
-  - [Analysis of public transit ridership data](#transit)
-  - [Fact-checking OSHA data and H-2B visa records](#fact-check)
-  - [Analyzing OSHA complaints](#osha)
-- [Graphics production](#graphics)
-  - [Data-driven story about census results ](#census)
-  - [Interactive line charts using D3](#half-covid)
-  - [Interactive U.S. map using D3]((#homicides-map))
-  - [Interactive choropleth map using Leaflet](#voting-map)
-- [About Me](#about)
+- [News products](#news-products)
+  - [News app: Mapping every journalist killed in South Asia since 1992](#news-app-mapping-every-journalist-killed-in-south-asia-since-1992)
+  - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
+- [Data analysis](#data-analysis)
+  - [Analysis of campus police logs of universities in the DC metro area](#analysis-of-campus-police-logs-of-universities-in-the-dc-metro-area)
+  - [Analysis of public transit ridership data](#analysis-of-public-transit-ridership-data)
+  - [Fact-checking OSHA data and H-2B visa records](#analysis-of-osha-data-and-h-2b-visa-records)
+  - [Analyzing OSHA complaints](#analysis-osha-complaints)
+  - [Analysis of 2021 census data](#analysis-of-2021-census-data)
+- [Graphics production](#graphics-production)
+  - [Data-driven story about census results ](#data-driven-story-about-census-results)
+  - [Interactive line charts using D3](#interactive-line-charts-using-d3)
+  - [Interactive U.S. map using D3](#interactive-us-map-using-d3)
+  - [Interactive choropleth map using Leaflet](#vinteractive-choropleth-map-using-leaflet)
+- [About Me](##about-me)
   - [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
   - [Website](https://www.aadittambe.com)
 
-<a id="products"></a>
-
 ## News Products
-
-<a id="news-app"></a>
 
 ### News App: Mapping every journalist killed in South Asia since 1992
 **Python web scraping for data collection, Flask framework for development, JavaScript, Illustrator, ai2html and Leaflet for visualization, and pandas for data analysis**
@@ -39,19 +36,12 @@ This is my first news application developed after completing the [First News App
 
 The app can be viewed [here](https://aadittambe.github.io/south-asia-journalists/build/index.html). The scraping script and data analysis can be viewed [here](https://github.com/aadittambe/app/blob/master/analysis/scraper.ipynb).
 
-<a id="bot"></a>
-
 ### Twitter bot: Documenting attacks on journalists, worldwide, in real-time (in-progress)
 **Python web scraping for data collection, pandas for data analysis, Tweepy and the Twitter API for developing the bot**
 
 After scraping data from the Committee to Protect Journalists' website about journalists killed in the line of duty, I wanted to find a way to document their stories. I built a bot that tweets death anniversaries of journalists who were killed. I plan to release an expanded news app that tracks — in real time — journalists who are killed across the world. This bot, in addition to tweeting anniversaries, will tweet deaths, in real time. The Python script for the bot can be found [here](bot/bot.py), and the bot can be viewed [here](https://twitter.com/press_attacked).
 
-
-<a id="data"></a>
-
 ## Data analysis
-
-<a id="police"></a>
 
 ### Analysis of campus police logs of universities in the DC metro area
 *Capital News Service* — **Python web scraping, tabula-py and pandas for analysis and cleaning, and GitHub Actions for automating data collection**
@@ -62,8 +52,6 @@ We are using Beautiful Soup, Requests and Selenium to scrape PDFs, and tabula-py
 
 A sample scraping script I wrote can be found [here](police-logs/howard_scraper.ipynb), which uses Beautiful Soup, Requests and tabula-py. A sample GitHub of a GitHub Actions workflow we designed can be found [here](police-logs/scrape.yml).
 
-<a id="transit"></a>
-
 ### Analysis of public transit ridership data
 *NBC News* — **Python pandas for data analysis**
 
@@ -72,8 +60,6 @@ During my internship at NBC News, I pitched a story about America's return to pu
 I used pandas to identify trends in U.S. cities, and my analysis found that although transit in some metro areas showed a rebound, most transit authorities found themselves struggling to bring ridership back.
 
 The story, which includes graphics produced by me, can be found [here](https://www.nbcnews.com/news/us-news/pandemic-sunk-mass-transit-use-data-shows-its-slow-recovery-n1274784).
-
-<a id="fact-check"></a>
 
 ### Analysis of OSHA data and H-2B visa records
 *Howard Center* — **R for data analysis**
@@ -85,8 +71,6 @@ I led the data team's fact-check and we published our findings in an R markdown 
 Working on the data team gave me a broader sense of how code can be used to develop newsworthy findings from complex data sets. The project led me to become comfortable with R, use packages such as tidyverse, janitor, dplyr and lubridate, as well as blscraper library. I learned to functions, loops, merges and joins.
 
 The project can be found [here](https://cnsmaryland.org/2021/05/12/us-deems-migrant-seafood-workers-essential-but-limits-their-covid-19-protections/).
-
-<a id="transit"></a>
 
 ### Analysis OSHA complaints
 *Howard Center* — **R for data analysis**
@@ -102,12 +86,7 @@ I analyzed the county-level census data that was released this year, and develop
 
 My analysis can be found in [this](census/analysis/analysis.Rmd) notebook, and the story can be viewed [here](https://cnsmaryland.org/2021/10/07/takeaways-from-the-2020-census-for-maryland-in-5-charts).
 
-
-<a id = "graphics"></a>
-
 ## Graphics production 
-
-<a id = "census"></a>
 
 ### Data-driven story about census results
 *Capital News Service* — **JavaScript, D3, Leaflet and ai2html for data visualization; R for data analysis**
@@ -116,15 +95,11 @@ I analyzed 2020 county-level census data in R to develop interesting findings ab
 
 All my code for graphics can be viewed [here](census/graphics/). The story with graphics can be found [here](https://cnsmaryland.org/2021/10/07/takeaways-from-the-2020-census-for-maryland-in-5-charts).
 
-<a id = "covid-half"></a>
-
 ### Interactive line charts using D3
 *NBC News* — **Javascript and D3 for data visualization**
 
 When the Centers for Disease Control and Prevention released data indicating that half of the country was fully vaccinated against Covid, I wanted to show the disparity between vaccination rates between different states. I used D3 to create a small-multiple of line charts with tooltips to show the vaccination rates in 10 most- and least-vaccinated states.
 The story and graphics can be found [here](https://www.nbcnews.com/news/us-news/half-america-now-fully-vaccinated-n1275798).
-
-<a id = "homicides-map"></a>
 
 ### Interactive U.S. map using D3
 *NBC News* — **Javascript and D3 for data visualization**
@@ -135,16 +110,12 @@ I used D3 to create an interactive U.S. map to show the comparison of homicide r
 
 The story, along with the interactive graphic, can be found [here](https://www.nbcnews.com/news/us-news/track-solved-murder-rates-united-states-n1271928).
 
-<a id = "voting-map"></a>
-
 ### Interactive choropleth map using Leaflet
 *NBC News* — **Javascript and Leaflet for data visualization**
 
 When state legislatures across the U.S. were passing voting laws, I used data collected by the Brennan Center for Justice to create interactive choropleth maps to show which states in the country have passed restrictive and expansive laws.
 
 The story, along with the interactive graphic, can be found [here](https://cnsmaryland.org/2021/09/14/an-aggressive-wave-of-voting-laws-nationwide-in-charts/).
-
-<a id = "about"></a>
 
 ## About me
 
