@@ -4,12 +4,10 @@ I am Aadit, a journalist and developer who tells data-driven stories visually &m
 
 This repository displays data analysis and graphics production work for the [Howard Center for Investigative Journalism](https://merrill.umd.edu/howard-center-for-investigative-journalism), [Capital News Service](https://cnsmaryland.org) and [NBC News](https://nbcnews.com/datagraphics).
 
-These code samples show my growth as a computational and data journalist since taking my first computer science course in January 2020. Since then, I have compiled code — both for data analysis and producing graphics — for the Howard Center for Investigative Journalism, Capital News Service and the data/graphics team at NBC News.
-
-My work demonstrates my commitment to figuring out programming concepts I may not know.
+These code samples show my growth as a computational and data journalist since taking my first computer science course in January 2020. Since then, I have compiled code — both for data analysis and producing graphics — for the Howard Center for Investigative Journalism, Capital News Service and the data/graphics team at NBC News. My work has demonstrated my commitment to figuring out programming concepts I may not know.
 
 All of the code in this repository was either written by or contributed to by me. Here's an overview of what's in this repository.
-- &#127758; [News products](#news-products)
+- 🖥 [News products](#news-products)
   - [News app: Mapping every journalist killed in South Asia since 1992](#news-app-mapping-every-journalist-killed-in-south-asia-since-1992)
   - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
 - &#128200; [Data analysis](#data-analysis)
@@ -24,10 +22,10 @@ All of the code in this repository was either written by or contributed to by me
   - [Interactive U.S. map using D3](#interactive-us-map-using-d3)
   - [Interactive choropleth map using Leaflet](#vinteractive-choropleth-map-using-leaflet)
 - &#128104;&#8205;&#128187; [About Me](##about-me)
-  - [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
-  - [Website](https://www.aadittambe.com)
+  - 📝 [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
+  - 🌎 [Website](https://www.aadittambe.com)
 
-## News Products
+## &#127758; News Products
 
 ### News App: Mapping every journalist killed in South Asia since 1992
 **Python web scraping for data collection, Flask framework for development, JavaScript, Illustrator, ai2html and Leaflet for visualization, and pandas for data analysis**
@@ -41,7 +39,7 @@ The app can be viewed [here](https://aadittambe.github.io/south-asia-journalists
 
 After scraping data from the Committee to Protect Journalists' website about journalists killed in the line of duty, I wanted to find a way to document their stories. I built a bot that tweets death anniversaries of journalists who were killed. I plan to release an expanded news app that tracks — in real time — journalists who are killed across the world. This bot, in addition to tweeting anniversaries, will tweet deaths, in real time. The Python script for the bot can be found [here](bot/bot.py), and the bot can be viewed [here](https://twitter.com/press_attacked).
 
-## Data analysis
+## &#128200; Data analysis
 
 ### Analysis of campus police logs of universities in the DC metro area
 *Capital News Service* — **Python web scraping, tabula-py and pandas for analysis and cleaning, and GitHub Actions for automating data collection**
@@ -86,7 +84,7 @@ I analyzed the county-level census data that was released this year, and develop
 
 My analysis can be found in [this](census/analysis/analysis.Rmd) notebook, and the story can be viewed [here](https://cnsmaryland.org/2021/10/07/takeaways-from-the-2020-census-for-maryland-in-5-charts).
 
-## Graphics production 
+## &#128506; Graphics production 
 
 ### Data-driven story about census results
 *Capital News Service* — **JavaScript, D3, Leaflet and ai2html for data visualization; R for data analysis**
@@ -117,7 +115,7 @@ When state legislatures across the U.S. were passing voting laws, I used data co
 
 The story, along with the interactive graphic, can be found [here](https://cnsmaryland.org/2021/09/14/an-aggressive-wave-of-voting-laws-nationwide-in-charts/).
 
-## About me
+## &#128104;&#8205;&#128187; About
 
 I am currently a fellow at the Howard Center for Investigative Journalism, and a data and graphics reporter for Capital News Service, where I write web scrapers, crunch data sets to develop stories and create graphics that illustrate reporting.
 
@@ -127,5 +125,5 @@ I am currently pursuing a master’s degree in data and computational journalism
 
 If you like to keep up with current events and care about the news experience as a whole, too — or want to simply chat about trains or nerd out about antique fountain pens — we should connect!
 
-- [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
-- [Website](https://www.aadittambe.com)
+- 📝 [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
+- 🖥 [Website](https://www.aadittambe.com)
