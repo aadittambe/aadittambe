@@ -1,6 +1,6 @@
 # Hi &#128075;&#127997; &mdash; thanks for stopping by!
 
-I am Aadit, a journalist and developer who tells data-driven stories visually &mdash; with code. My work helps people understand the impact of the news on their lives.
+I am Aadit, a journalist and developer who tells data-driven stories visually &mdash; with code. My work helps people understand the news and make sense of the policies that impact them.
 
 This repository displays data analysis and graphics production work for the [Howard Center for Investigative Journalism](https://merrill.umd.edu/howard-center-for-investigative-journalism), [Capital News Service](https://cnsmaryland.org) and [NBC News](https://nbcnews.com/datagraphics).
 
