@@ -9,21 +9,21 @@ These code samples show my growth as a computational and data journalist since t
 My work demonstrates my commitment to figuring out programming concepts I may not know.
 
 All of the code in this repository was either written by or contributed to by me. Here's an overview of what's in this repository.
-- [News products](#news-products)
+- &#127758; [News products](#news-products)
   - [News app: Mapping every journalist killed in South Asia since 1992](#news-app-mapping-every-journalist-killed-in-south-asia-since-1992)
   - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
-- [Data analysis](#data-analysis)
+- &#128200; [Data analysis](#data-analysis)
   - [Analysis of campus police logs of universities in the DC metro area](#analysis-of-campus-police-logs-of-universities-in-the-dc-metro-area)
   - [Analysis of public transit ridership data](#analysis-of-public-transit-ridership-data)
   - [Fact-checking OSHA data and H-2B visa records](#analysis-of-osha-data-and-h-2b-visa-records)
   - [Analyzing OSHA complaints](#analysis-osha-complaints)
   - [Analysis of 2021 census data](#analysis-of-2021-census-data)
-- [Graphics production](#graphics-production)
+- &#128506; [Graphics production](#graphics-production)
   - [Data-driven story about census results ](#data-driven-story-about-census-results)
   - [Interactive line charts using D3](#interactive-line-charts-using-d3)
   - [Interactive U.S. map using D3](#interactive-us-map-using-d3)
   - [Interactive choropleth map using Leaflet](#vinteractive-choropleth-map-using-leaflet)
-- [About Me](##about-me)
+- &#128104;&#8205;&#128187; [About Me](##about-me)
   - [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
   - [Website](https://www.aadittambe.com)
 
