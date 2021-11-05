@@ -4,7 +4,7 @@ I am Aadit, a journalist and developer who tells data-driven stories visually &m
 
 This repository displays data analysis and graphics production work for the [Howard Center for Investigative Journalism](https://merrill.umd.edu/howard-center-for-investigative-journalism), [Capital News Service](https://cnsmaryland.org) and [NBC News](https://nbcnews.com/datagraphics).
 
-These code samples show my growth as a computational and data journalist since taking my first computer science course in January 2020. Since then, I have compiled code — both for data analysis and producing graphics — for the Howard Center for Investigative Journalism, Capital News Service and the data/graphics team at NBC News. My work has demonstrated my commitment to figuring out programming concepts I may not know.
+These code samples show my growth as a computational and data journalist since taking my first computer science course in January 2020. Since then, I have compiled code — both for data analysis and producing graphics — for the Howard Center for Investigative Journalism, Capital News Service and the data/graphics team at NBC News. My work demonstrates my commitment to figuring out programming concepts I may not know.
 
 All of the code in this repository was either written by or contributed to by me. Here's an overview of what's in this repository.
 - 🖥 [News products](#news-products)
@@ -21,7 +21,7 @@ All of the code in this repository was either written by or contributed to by me
   - [Interactive line charts using D3](#interactive-line-charts-using-d3)
   - [Interactive U.S. map using D3](#interactive-us-map-using-d3)
   - [Interactive choropleth map using Leaflet](#vinteractive-choropleth-map-using-leaflet)
-- &#128104;&#8205;&#128187; [About Me](##about-me)
+- &#128104;&#8205;&#128187; [About Me](#about)
   - 📝 [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
   - 🌎 [Website](https://www.aadittambe.com)
 
@@ -126,4 +126,4 @@ I am currently pursuing a master’s degree in data and computational journalism
 If you like to keep up with current events and care about the news experience as a whole, too — or want to simply chat about trains or nerd out about antique fountain pens — we should connect!
 
 - 📝 [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
-- 🖥 [Website](https://www.aadittambe.com)
+- 🖥 [Website](https://www.aadittambe.com)x
