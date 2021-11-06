@@ -10,6 +10,7 @@ All of the code in this repository was either written by or contributed to by me
 - 🖥 [News products](#news-products)
   - [News app: Mapping every journalist killed in South Asia since 1992](#news-app-mapping-every-journalist-killed-in-south-asia-since-1992)
   - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
+  - [Quiz: Goucher poll](#quiz-goucher-poll)
 - &#128200; [Data analysis](#data-analysis)
   - [Analysis of campus police logs of universities in the DC metro area](#analysis-of-campus-police-logs-of-universities-in-the-dc-metro-area)
   - [Analysis of public transit ridership data](#analysis-of-public-transit-ridership-data)
@@ -38,6 +39,14 @@ The app can be viewed [here](https://aadittambe.github.io/south-asia-journalists
 **Python web scraping for data collection, pandas for data analysis, Tweepy and the Twitter API for developing the bot**
 
 After scraping data from the Committee to Protect Journalists' website about journalists killed in the line of duty, I wanted to find a way to document their stories. I built a bot that tweets death anniversaries of journalists who were killed. I plan to release an expanded news app that tracks — in real time — journalists who are killed across the world. This bot, in addition to tweeting anniversaries, will tweet deaths, in real time. The Python script for the bot can be found [here](bot/bot.py), and the bot can be viewed [here](https://twitter.com/press_attacked).
+
+### Quiz: Goucher Poll
+*Capital News Service* — **jQuery and JavaScript for interactivity, HTML and CSS for web design.**
+
+I conceptualized, designed and developed an innovative and interactive way, to tell a story about the results of the Goucher College poll results: a quiz.
+
+The front-end of the published story can be viewed [here](https://cnsmaryland.org/interactives/fall2021/goucher-poll/index.html), and the code I wrote that powers the quiz can be found [here](quiz).
+
 
 ## &#128200; Data analysis
 
