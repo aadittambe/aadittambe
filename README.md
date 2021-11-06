@@ -43,7 +43,7 @@ After scraping data from the Committee to Protect Journalists' website about jou
 ### Quiz: Goucher Poll
 *Capital News Service* — **jQuery and JavaScript for interactivity, HTML and CSS for web design.**
 
-I conceptualized, designed and developed an innovative and interactive way, to tell a story about the results of the Goucher College poll results: a quiz.
+I conceptualized, designed and developed a quiz — an innovative and interactive way — to tell a story about the results of the Goucher College poll results: a quiz.
 
 The front-end of the published story can be viewed [here](https://cnsmaryland.org/interactives/fall2021/goucher-poll/index.html), and the code I wrote that powers the quiz can be found [here](quiz).
 
