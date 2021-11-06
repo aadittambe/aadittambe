@@ -4,7 +4,7 @@ I am Aadit, a journalist and developer who tells data-driven stories visually &m
 
 This repository  work for the [Howard Center for Investigative Journalism](https://merrill.umd.edu/howard-center-for-investigative-journalism), [Capital News Service](https://cnsmaryland.org) and [NBC News](https://nbcnews.com/datagraphics).
 
-These samples — which include code I have written for [Howard Center for Investigative Journalism](https://merrill.umd.edu/howard-center-for-investigative-journalism), [Capital News Service](https://cnsmaryland.org) and [NBC News](https://nbcnews.com/datagraphics) — show my growth as a computational and data journalist since taking my first computer science course in January 2020. Since then, I have compiled code — both for data analysis and producing graphics — for the Howard Center for Investigative Journalism, Capital News Service and the data/graphics team at NBC News. My work demonstrates my commitment to figuring out programming concepts I may not know.
+These data analysis and graphics samples — which include code I have compiled for the [Howard Center for Investigative Journalism](https://merrill.umd.edu/howard-center-for-investigative-journalism), [Capital News Service](https://cnsmaryland.org) and [NBC News](https://nbcnews.com/datagraphics) — show my growth as a computational and data journalist, since taking my first computer science course in January 2020. My work demonstrates my commitment to figuring out programming concepts I may not know.
 
 All of the code in this repository was either written by or contributed to by me. Here's an overview of what's in this repository.
 - 🖥 [News products](#news-products)
