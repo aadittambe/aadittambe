@@ -8,7 +8,7 @@ All of the code in this repository was either written by or contributed to by me
 - 🖥 [News products](#-news-products)
   - [Tracker: See how many people are flying this Thanksgiving](#tracker-see-how-many-people-are-flying-this-thanksgiving)
   - [News app: Mapping every journalist killed in South Asia since 1992](#news-app-mapping-every-journalist-killed-in-south-asia-since-1992)
-  - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
+  - [🔜 Twitter bot: Documenting attacks on journalists, worldwide, in real time](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
   - [Quiz: Goucher poll](#quiz-goucher-poll)
   - [Walkthrough: ai2html](#walkthrough-ai2html)
 - &#128200; [Data analysis](#-data-analysis)
