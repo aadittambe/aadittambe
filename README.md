@@ -6,11 +6,11 @@ These data analysis and graphics samples — which include code I have compiled 
 
 All of the code in this repository was either written by or contributed to by me. Here's an overview of what's in this repository.
 - 🖥 [News products](#-news-products)
-  - [Tracking air travel: See how many people are flying this Thanksgiving](#tracking-air-travel-see-how-many-people-are-flying-this-thanksgiving)
+  - [Tracker: See how many people are flying this Thanksgiving](#tracker-see-how-many-people-are-flying-this-thanksgiving)
   - [News app: Mapping every journalist killed in South Asia since 1992](#news-app-mapping-every-journalist-killed-in-south-asia-since-1992)
   - [Twitter bot: Documenting attacks on journalists, worldwide, in real time (in-progress)](#twitter-bot-documenting-attacks-on-journalists-worldwide-in-real-time-in-progress)
   - [Quiz: Goucher poll](#quiz-goucher-poll)
-  - [ai2html walkthrough](#ai2html-walkthrough)
+  - [Walkthrough: ai2html](#walkthrough-ai2html)
 - &#128200; [Data analysis](#-data-analysis)
   - [Analysis of campus police logs of universities in the DC metro area](#analysis-of-campus-police-logs-of-universities-in-the-dc-metro-area)
   - [Analysis of public transit ridership data](#analysis-of-public-transit-ridership-data)
@@ -28,7 +28,7 @@ All of the code in this repository was either written by or contributed to by me
 
 ## &#127758; News Products
 
-### Tracking air travel: See how many people are flying this Thanksgiving
+### Tracker: See how many people are flying this Thanksgiving
 *Capital News Service* — **GitHub Actions for data collection, Python web scraping, pandas for analysis, Chart.js for visualization**
 
 I wrote a [python script](https://github.com/aadittambe/thanksgiving-travel/blob/main/national-scrape.py) to scrape daily throughput numbers released by TSA — and used GitHub Actions to automate it and run daily — to track how many people are flying in the United States every day. The scripts logs the results to a CSV in the repository, which powers visualizations created using Chart.js. The repositiory can be found [here](https://github.com/aadittambe/thanksgiving-travel), and the story can be viewed [here](https://cnsmaryland.org/2021/11/18/tracking-air-travel-see-how-many-people-are-flying-this-thanksgiving/).
@@ -53,7 +53,7 @@ I conceptualized, designed and developed a quiz — an innovative and interactiv
 
 The front-end of the published story can be viewed [here](https://cnsmaryland.org/interactives/fall2021/goucher-poll/index.html), and the code I wrote that powers the quiz can be found [here](quiz).
 
-### ai2html walkthrough
+### Walkthrough: ai2html
 **ai2html for simple — yet responsive — graphics**
 
 After learning how to use the ai2html tool, I wrote up an ai2html walkthrough to create a simple graphic for graphics journalists. The walkthrough draws inspiration from the [First News App](https://first-news-app.readthedocs.io/en/latest/#) tutorial — which opened my door to the world of news apps — as well [this](https://www.youtube.com/watch?v=b4ECrAVly2g&t) ai2html lesson. The repository can be found [here](https://github.com/aadittambe/ai2html/).
