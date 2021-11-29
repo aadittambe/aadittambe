@@ -145,4 +145,4 @@ I am currently pursuing a master’s degree in data and computational journalism
 If you like to keep up with current events and care about the news experience as a whole, too — or want to simply chat about trains or nerd out about antique fountain pens — we should connect!
 
 - 📝 [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
-- 🖥 [Website](https://www.aadittambe.com)
+- 🌎 [Website](https://www.aadittambe.com)
