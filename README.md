@@ -26,7 +26,7 @@ All of the code in this repository was either written by or contributed to by me
   - 📝 [Resume](https://aadittambe.com/docs/AaditTambe_Resume.pdf)
   - 🌎 [Website](https://www.aadittambe.com)
 
-## &#127758; News Products
+## 🖥 News Products
 
 ### Tracker: See how many people are flying this Thanksgiving
 *Capital News Service* — **GitHub Actions for data collection, Python web scraping, pandas for analysis, Chart.js for visualization**
