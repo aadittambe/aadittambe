@@ -140,7 +140,7 @@ I wanted to buy a black, ad-supported Amazon Kindle as a present for my birthday
 ### Walkthrough: ai2html
 **ai2html for simple — yet responsive — graphics**
 
-After learning how to use the ai2html tool, I wrote up an ai2html walkthrough to create a simple graphic for graphics journalists. The walkthrough draws inspiration from the [First News App](https://first-news-app.readthedocs.io/en/latest/#) tutorial — which opened my door to the world of news apps — as well [this](https://www.youtube.com/watch?v=b4ECrAVly2g&t) ai2html lesson. The repository can be found [here](https://github.com/aadittambe/ai2html/).
+After learning how to use the ai2html tool, I wrote up an ai2html walkthrough to create a simple graphic for graphics journalists. The walkthrough draws inspiration from the [First News App](https://first-news-app.readthedocs.io/en/latest/#) tutorial — which opened my door to the world of news apps — as well as [this](https://www.youtube.com/watch?v=b4ECrAVly2g&t) ai2html lesson. The repository can be found [here](https://github.com/aadittambe/ai2html/).
 
 
 ## &#128104;&#8205;&#128187; About
