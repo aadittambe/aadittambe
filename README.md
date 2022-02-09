@@ -15,6 +15,7 @@ All of the code in this repository was either written by or contributed to by me
   - [Analysis of public transit ridership data](#analysis-of-public-transit-ridership-data)
   - [Fact-checking OSHA data and H-2B visa records](#analysis-of-osha-data-and-h-2b-visa-records)
   - [Analyzing OSHA complaints](#analysis-osha-complaints)
+  - [Python script to Google search quick-and-dirty addresses and return formatted addresses](#python-script-to-Google-search-quick-and-dirty-addresses-and-return-formatted-addresses)
   - [Analysis of 2021 census data](#analysis-of-2021-census-data)
 - &#128506; [Graphics production](#-graphics-production)
   - [Data-driven story about census results ](#data-driven-story-about-census-results)
@@ -93,6 +94,11 @@ The project can be found [here](https://cnsmaryland.org/2021/05/12/us-deems-migr
 Before the Howard Center began the project, I played a crucial role in narrowing down the project idea. I spent a month analyzing federal OSHA complaint records related to COVID-19. This analysis later led to the data findings that were at the center of the investigative project. 
 
 The initial analysis can be found in [this](/osha_analysis/osha_analysis.rmd) markdown.
+
+### Python script to Google search quick-and-dirty addresses and return formatted addresses
+For a Howard Center investigation, we needed to find city names of establishment we had names, street addresses and states for. I wrote a tool automated the search process for the most part using Python and Selenium. We manually filled in addresses for instances where this function did not return a result. The Python script passes a broke address through Google, and returns a formatted string from the search. 
+
+More about the script can be found [here](google-addresses), and the script can be found [here](google-addresses/addresses.py).
 
 ### Analysis of 2021 census data
 *Capital News Service* — **R for data analysis**
