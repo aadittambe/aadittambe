@@ -22,6 +22,7 @@ All of the code in this repository was either written by or contributed to by me
   - [Interactive line charts using D3](#interactive-line-charts-using-d3)
   - [Interactive U.S. map using D3](#interactive-us-map-using-d3)
   - [Interactive choropleth map using Leaflet](#vinteractive-choropleth-map-using-leaflet)
+  - [Equal-area cartograms using Squaire](#Equal-area-cartograms-using-Squaire)
 - 👀 [Side projects](#-side-projects)
   - [Amazon Kindle cost scraper](#Amazon-Kindle-cost-scraper)
   - [Walkthrough: ai2html](#walkthrough-ai2html)
@@ -138,6 +139,17 @@ The story, along with the interactive graphic, can be found [here](https://www.n
 When state legislatures across the U.S. were passing voting laws, I used data collected by the Brennan Center for Justice to create interactive choropleth maps to show which states in the country have passed restrictive and expansive laws.
 
 The story, along with the interactive graphic, can be found [here](https://cnsmaryland.org/2021/09/14/an-aggressive-wave-of-voting-laws-nationwide-in-charts/).
+
+
+### Equal-area cartograms using Squaire
+*Personal project* — **JavaScript and Squaire.js for mapping**
+
+I wanted to experiment with cartograms. For a data visualization class, I created two maps — one of the [U.S.](https://aadittambe.github.io/grid-map/) and another of [Maryland](https://aadittambe.github.io/md-grid-map/) — with The Wall Street Journal's open-source Squaire.js library.
+
+The U.S. map, which I recreated from an older story of mine about voting laws, can be found [here](https://aadittambe.github.io/grid-map/), while the code powering it can be found in [this](https://github.com/aadittambe/grid-map) repository.
+
+The Maryland map, which created grid for, can be found [here](https://aadittambe.github.io/md-grid-map/), while the code powering it can be found [here](https://github.com/aadittambe/md-grid-map).
+
 
 ## 👀 Side / hobby projects
 ### Amazon Kindle cost scraper
